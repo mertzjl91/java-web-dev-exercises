@@ -47,4 +47,21 @@ public class Student {
         gpa = aGpa;
     }
 
+    public String getGradeLevel(int credits) {
+        String gradeLevel = "";
+        if(credits < 29 && credits >= 0) {
+            gradeLevel = "Freshman";
+        } else if (credits > 30 && credits < 59) {
+            gradeLevel = "Sophomore";
+        } else if (credits > 60 && credits < 89) {
+            gradeLevel = "Junior";
+        } else {
+            gradeLevel = "Senior";
+        }
+        return gradeLevel;
+    }
+
+//    public int addGrade(int numCredits, double grade) {
+//
+//    }
 }
